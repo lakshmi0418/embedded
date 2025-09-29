@@ -1,3 +1,23 @@
+CHAPTER 1:
+1)what is embedded system?types?
+2)diff between IOT and IIOT?
+3)steps to design embedded project?
+4)diff between MP and MC
+5)purpose of DSP?
+6)hardward /von neumon architecture?
+7)what is FPGA
+8)what is soc?
+9)simulator and emulator?
+CHAPTER 2:
+1)linker descriptor file
+2)RTOS and types:
+3)diff between UART SPI I2C
+4)explain stages?compiler,assembler linker and loader?
+5)why 32 bit and 1 bit microcontroller?
+6)RISC AND CISK
+7)why we need hardware timer in mc compared to sleep?
+8)diff between hardware timer and software timer?
+9)why we need seria pinsthan io pins?
 what is semaphore?types of semaphore
 
 semaphore is a synchronization tool used in real-time operating systems (RTOS) and multithreaded applications to control access to shared resources and prevent race conditions.
@@ -199,11 +219,15 @@ int main() {
     // Print the result
     printf("Final counter value: %d\n", counter);  // Should be 2 * NUM_ITERATIONS
 
-    return 0;
+000000..00001
+0101
+2.42.4.00000.0.1010101
+
+.
+
+
+
+
+000000
 }
 that takes (locks) the mutex can give (unlock) it.
-
-Real-Time Example of a Mutex
-💡 Real-Life Analogy:
-
-Imagine a bathroom with only one key. If a person has the key, no one else can enter until they return it. This ensures mutual exclusion — only one person (or thread) can use the bathroom (or resource) at a time.
