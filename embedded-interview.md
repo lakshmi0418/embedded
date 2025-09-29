@@ -187,4 +187,7 @@ int main() {
 }
 that takes (locks) the mutex can give (unlock) it.
 
+Real-Time Example of a Mutex
+💡 Real-Life Analogy:
 
+Imagine a bathroom with only one key. If a person has the key, no one else can enter until they return it. This ensures mutual exclusion — only one person (or thread) can use the bathroom (or resource) at a time.
