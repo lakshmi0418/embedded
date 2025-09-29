@@ -129,6 +129,8 @@ int main() {
 
 3. Mutex (Mutual Exclusion Semaphore)How Semaphore is Used:
 
+When the button is pressed, the interrupt service routine (ISR) gives the semaphore.
+Mutual Exclusion (often abbreviated as mutex) means only one thread or process can access a shared resource at a time.
 Special type of binary semaphore with ownership.
 
 How Semaphore is Used:
@@ -141,7 +143,21 @@ The LED task waits (blocks) on the semaphore.
 
 Once the semaphore is given, the task wakes up and toggles the LED.
 
+Why it's needed:
 
+In multi-threaded or multi-process programs:
+
+If two threads try to write to the same file or memory at the same time, it can cause data corruption.
+
+Mutual exclusion prevents this by locking the resource, so only one thread can use it until it’s done.
+
+🧠 Real-Life Example:
+
+Imagine a bathroom with one key. Only one person can use it at a time:
+
+If someone is inside, others have to wait.
+
+Once they come out and return the key, the next person can enter.
 Only the task #include <stdio.h>
 #include <pthread.h>
 
